@@ -1,0 +1,94 @@
+/* Background */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: url("unnamed.png") no-repeat center center/cover;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Container */
+.container {
+  background: rgba(0, 0, 0, 0.8);
+  padding: 30px;
+  border-radius: 15px;
+  text-align: center;
+  color: #fff;
+  width: 380px;
+  box-shadow: 0 0 20px rgba(255, 0, 0, 0.7);
+  border: 2px solid rgba(255, 0, 0, 0.5);
+}
+
+/* Title */
+h1 {
+  margin-bottom: 20px;
+  color: #ff3333;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  text-shadow: 0 0 12px #ff0000;
+}
+
+/* Display */
+#display {
+  font-size: 52px;
+  margin: 20px 0;
+  font-weight: bold;
+  color: #fff;
+  text-shadow: 0 0 15px #ff0000;
+  letter-spacing: 3px;
+  font-family: 'Courier New', monospace;
+}
+
+/* Buttons */
+.buttons button {
+  padding: 12px 22px;
+  margin: 6px;
+  font-size: 16px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.2s;
+  font-weight: bold;
+  color: #fff;
+}
+
+.start { background: #27ae60; }
+.pause { background: #e67e22; }
+.reset { background: #c0392b; }
+.lap { background: #2980b9; }
+.clear { background: #8e44ad; }
+
+.buttons button:hover {
+  transform: scale(1.08);
+  filter: brightness(1.2);
+}
+
+/* Laps */
+h3 {
+  margin-top: 20px;
+  color: #ff3333;
+  font-weight: bold;
+  border-bottom: 1px solid #ff3333;
+  padding-bottom: 5px;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  max-height: 200px;
+  overflow-y: auto;
+}
+
+ul li {
+  background: rgba(255, 255, 255, 0.1);
+  margin: 5px auto;
+  padding: 10px;
+  border-radius: 6px;
+  font-size: 14px;
+  color: #fff;
+  box-shadow: 0 0 6px rgba(255, 0, 0, 0.6);
+  font-family: 'Courier New', monospace;
+}
